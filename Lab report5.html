@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            background-color: beige;
+            border-color: black;
+           border-collapse: collapse;
+            width: 500px;
+            height: 200px;
+            
+        }
+        .my-style{
+            text-align: center;
+            background-color: grey;
+        }
+        pre{
+            text-align: center;
+        }
+       #decoration{
+              text-decoration: underline;
+              text-transform: capitalize;
+              text-shadow: 1px 1px gray;
+              background-color:burlywood;
+              padding: 5px;
+              margin-bottom: 10px;
+       }
+
+    </style>
+</head>
+<body>
+   
+    <form>
+        <table border="2">
+            <caption>
+                 <h2 id="decoration"> Combine form and table concept:</h2>
+            </caption>
+            
+           <div>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                    <input type="text"name="name"id="name">
+                </td>
+                <td rowspan="3">
+                    <label for="comment">Comments:</label><br>
+                    <textarea> </textarea>
+                </td>
+            </tr><br><br><br>
+            <tr>
+                <td>
+                    <label for="name">Email:</label>
+                    <input type="mail"name="mail"id="mail" required> 
+
+                </td><Br>
+            </tr><br><br><br>
+            <tr>
+                <td>
+                    <label for="dept">Department:</label>
+                    <select name="department">
+<option > [Select Any Value]</option>
+<option value="CSE">CSE</option>
+<option value="EEE">EEE</option>
+<option value="LLB">LLB</option>
+                    </select>
+                </td>
+            </tr><br>
+           </div><br>
+           <div>
+            <tr>
+                <td colspan="3">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="gender"value="Male">Male
+                    <input type="radio" id="gender"value="Female">Female
+                    
+                        <label for="subject">Favourite Subject:</label>
+             <pre>
+                    <input type="checkbox" name="subject"id=subject required>F3026
+                    <input type="checkbox" name="subject"id=subject>F3038
+                    <input type="checkbox" name="subject"id=subject>F4106
+
+                    </pre>
+                </td>
+            </tr>
+           </div><br>
+           <div>
+            <tr>
+                <td colspan="3" class="my-style">
+                    <input type="submit"value="Send Information">
+                    <input type="reset"value="Clear All">
+                </td>
+            </tr>
+           </div>
+
+        </table>
+    </form>
+</body>
+</html>

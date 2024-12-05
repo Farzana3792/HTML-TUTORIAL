@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Form Design</title>
+    <style>
+        table{
+
+            background-color: #ffeaa7;
+        }
+
+        .my-style{
+            text-align: center;
+        }
+
+    </style>
+  </head>
+  <body>
+    <table border="1" >
+      <tr>
+        <td>
+          <label>Name:</label>
+          <input type="text" />
+        </td>
+        <td rowspan="3" valign="top">
+          <label>Comments:</label><br />
+          <textarea></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Email:
+          <input type="text" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Department:
+          <select name="" id="">
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="SWE">SWE</option>
+            <option value="EEE">EEE</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <table>
+            <tr>
+              <td valign="top">Gender</td>
+              <td valign="top">
+                <input type="radio" checked />
+                Male <br />
+                <input type="radio" />
+                Female
+              </td>
+              <td valign="top">Favourite Subject</td>
+              <td valign="top">
+                <input type="checkbox" />F3026 <br />
+                <input type="checkbox" checked /> F3038 <br />
+                <input type="checkbox" />F4106 <br />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="my-style"
+        >
+          <button>Send Information</button>
+          <button>Clear All</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

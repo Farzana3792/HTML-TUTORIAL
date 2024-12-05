@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS Data Binding Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+
+  <h1>AngularJS Data Binding Example</h1>
+
+  <!-- One-Way Data Binding -->
+  <p><strong>One-Way Binding:</strong> {{ message }}</p>
+
+  <!-- Two-Way Data Binding -->
+  <p><strong>Two-Way Binding:</strong></p>
+  <input type="text" ng-model="message">
+  <p>You typed: {{ message }}</p>
+
+  <!-- List Rendering with ng-repeat -->
+  <p><strong>List Example:</strong></p>
+  <ul>
+    <li ng-repeat="item in items">{{ item }}</li>
+  </ul>
+
+  <script>
+    // Define the AngularJS application
+    var app = angular.module('myApp', []);
+
+    // Define the controller
+    app.controller('myController', function($scope) {
+      $scope.message = "Hello, AngularJS!";
+      $scope.items = ["Item 1", "Item 2", "Item 3"];
+    });
+  </script>
+</body>
+</html>
